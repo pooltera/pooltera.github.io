@@ -1,0 +1,92 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "TERA DRep",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://pooltera.github.io/tera512.png",
+      "sha256": "05dcee8d62f027970d609127efcd5c95af6986a22add92ccc742f24956bd2a3b"
+    },
+    "motivations": "I registered as a DRep to represent delegators of the TERA Stake Pool, particularly Korean delegators who face language and participation barriers in governance. My motivation is to lower these barriers and act as a clear messenger of their perspectives within the Cardano governance process.",
+    "objectives": "I believe Cardano is the only blockchain that fully integrates decentralized governance at the protocol level. My objective as a DRep is to contribute to Cardano’s long-term health by supporting proposals that strengthen sustainability, transparency, and community-driven decision making.",
+    "paymentAddress": "addr1q8d9l5lal4rj9ywpkzh6g0vug34mh33favv2zgrtlv9ws3kp7pwv88c54fenxqflvyecp5ed72feyqjzf4uzsztl2rwsf6e2sd",
+    "qualifications": "I have operated a Cardano stake pool reliably since 2020. I have professional experience working as both a developer and a marketer at blockchain companies, as well as prior experience as a software developer in the broader IT industry, enabling balanced technical and practical judgment.",
+    "doNotList": false,
+    "references": [
+      {
+        "@type": "Link",
+        "label": "TERA Homepage",
+        "uri": "https://cardano-tera.com"
+      },
+      {
+        "@type": "Link",
+        "label": "TERA Stake Pool (TERA)",
+        "uri": "https://adastat.net/pools/7113de447fb62c38e3e3aeec434cac6fc76e05e997b84227e9c637b8"
+      },
+      {
+        "@type": "Link",
+        "label": "TERA Stake Pool (TERA2)",
+        "uri": "https://adastat.net/pools/50e113d1ada46a83a16d5ee6cfdc1a8baed6634c9f046ed30131eb11"
+      },
+      {
+        "@type": "Link",
+        "label": "TERA Stake Pool (TERA3)",
+        "uri": "https://adastat.net/pools/a95b4f891edea1c877954d48968968b2c91a80786858d89110caf7f9"
+      },
+      {
+        "@type": "Identity",
+        "label": "KakaoTalk",
+        "uri": "https://open.kakao.com/o/ghlLJBSc"
+      },
+      {
+        "@type": "Link",
+        "label": "Telegram / Community",
+        "uri": "https://t.me/tera_cardano"
+      }
+    ]
+  }
+}
