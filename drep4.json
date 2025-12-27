@@ -41,9 +41,37 @@
         "qualifications": "CIP119:qualifications",
         "doNotList": "CIP119:doNotList"
       }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
     }
   },
+
   "hashAlgorithm": "blake2b-256",
+
+  "authors": [
+    {
+      "name": "TERA Stake Pool",
+      "witness": {
+        "witnessAlgorithm": "ed25519",
+        "publicKey": "PUT_ED25519_PUBLIC_KEY_HEX_HERE",
+        "signature": "PUT_ED25519_SIGNATURE_HEX_HERE"
+      }
+    }
+  ],
+
   "body": {
     "givenName": "TERA DRep",
     "image": {
@@ -57,36 +85,12 @@
     "qualifications": "I have operated a Cardano stake pool reliably since 2020. I have professional experience working as both a developer and a marketer at blockchain companies, as well as prior experience as a software developer in the broader IT industry, enabling balanced technical and practical judgment.",
     "doNotList": false,
     "references": [
-      {
-        "@type": "Link",
-        "label": "TERA Homepage",
-        "uri": "https://cardano-tera.com"
-      },
-      {
-        "@type": "Link",
-        "label": "TERA Stake Pool (TERA)",
-        "uri": "https://adastat.net/pools/7113de447fb62c38e3e3aeec434cac6fc76e05e997b84227e9c637b8"
-      },
-      {
-        "@type": "Link",
-        "label": "TERA Stake Pool (TERA2)",
-        "uri": "https://adastat.net/pools/50e113d1ada46a83a16d5ee6cfdc1a8baed6634c9f046ed30131eb11"
-      },
-      {
-        "@type": "Link",
-        "label": "TERA Stake Pool (TERA3)",
-        "uri": "https://adastat.net/pools/a95b4f891edea1c877954d48968968b2c91a80786858d89110caf7f9"
-      },
-      {
-        "@type": "Identity",
-        "label": "KakaoTalk",
-        "uri": "https://open.kakao.com/o/ghlLJBSc"
-      },
-      {
-        "@type": "Link",
-        "label": "Telegram / Community",
-        "uri": "https://t.me/tera_cardano"
-      }
+      { "@type": "Link", "label": "TERA Homepage", "uri": "https://cardano-tera.com" },
+      { "@type": "Link", "label": "TERA Stake Pool (TERA)", "uri": "https://adastat.net/pools/7113de447fb62c38e3e3aeec434cac6fc76e05e997b84227e9c637b8" },
+      { "@type": "Link", "label": "TERA Stake Pool (TERA2)", "uri": "https://adastat.net/pools/50e113d1ada46a83a16d5ee6cfdc1a8baed6634c9f046ed30131eb11" },
+      { "@type": "Link", "label": "TERA Stake Pool (TERA3)", "uri": "https://adastat.net/pools/a95b4f891edea1c877954d48968968b2c91a80786858d89110caf7f9" },
+      { "@type": "Identity", "label": "KakaoTalk", "uri": "https://open.kakao.com/o/ghlLJBSc" },
+      { "@type": "Link", "label": "Telegram / Community", "uri": "https://t.me/tera_cardano" }
     ]
   }
 }
